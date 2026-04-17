@@ -118,8 +118,8 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 0 5rem;
-  max-width: 680px;
+  padding: 0 2rem 0 5%;
+  width: 50%;
   text-align: left;
 }
 
@@ -315,7 +315,7 @@ footer {
 @media (max-width: 900px) {
   .hero-content {
     padding: 0 3rem;
-    max-width: 100%;
+    width: 100%;
   }
 }
 
