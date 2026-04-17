@@ -82,24 +82,42 @@ body {
   height: 100vh;
   min-height: 600px;
   padding-top: 70px;
-  background: url('../images/deer-hero.jpg') right 12% / cover no-repeat;
+  background: var(--dark);
   display: flex;
   align-items: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  z-index: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
     to right,
-    rgba(14, 12, 10, 0.92) 40%,
-    rgba(14, 12, 10, 0.2) 100%
+    rgba(14, 12, 10, 1) 35%,
+    rgba(14, 12, 10, 0.15) 100%
   );
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding: 0 5rem;
   max-width: 680px;
   text-align: left;
@@ -317,8 +335,11 @@ footer {
     min-height: 100vh;
     padding-top: 55px;
     padding-bottom: 2rem;
-    background-position: top right;
     align-items: flex-start;
+  }
+
+  .hero-image img {
+    object-position: center 10%;
   }
 
   .hero-content {
