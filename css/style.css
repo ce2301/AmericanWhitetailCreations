@@ -104,13 +104,31 @@ body {
   max-width: 680px;
 }
 
+.hero-label {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
 .hero-sub {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 480px;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
 .hero-content h1 {
