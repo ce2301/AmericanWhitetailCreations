@@ -82,7 +82,7 @@ body {
   height: 100vh;
   min-height: 600px;
   padding-top: 70px;
-  background: url('../images/deer-hero.jpg') center right / cover no-repeat;
+  background: url('../images/deer-hero.jpg') top right / cover no-repeat;
   display: flex;
   align-items: center;
 }
